@@ -1,0 +1,62 @@
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 2px solid #000;
+
+}
+
+.separator:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .25em;
+}
+.carousel-style{
+  width: 70%;
+}
+.habilidades-style{
+  border-radius: 10px;
+  background: rgb(23, 21, 21);
+  height: 460px;
+  width: 100%;
+}
+.container-habilidades{
+  max-width: 90%;
+}
+.center-skills{
+  display: flex;
+  justify-content: center;
+  padding-left: 40px;
+}
+.skill-text-size{
+  text-align: left;
+  width: 170px;
+}
+.skill-text-size-skills{
+  text-align: left;
+  width: 100px;
+}
+.skill-text-size-tolls{
+  text-align: left;
+  width: 170px;
+}
+
+
+@media screen and (max-width:602px){
+  .habilidades-style{
+    border-radius: 10px;
+    background: rgb(23, 21, 21);
+    height: 550px;
+    width: 100%;
+  }
+
+}

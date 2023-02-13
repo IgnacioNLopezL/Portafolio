@@ -1,0 +1,11 @@
+.icon-styles{
+  padding-left: 35px;
+  display: grid;
+	grid-gap: 1px;
+	grid-template-columns: repeat(4, 40px);
+	grid-template-rows: repeat(1, auto);
+  justify-content: end;
+}
+.size-icon{
+  font-size: 25px;
+}

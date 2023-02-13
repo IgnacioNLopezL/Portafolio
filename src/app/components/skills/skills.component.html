@@ -1,0 +1,150 @@
+<div class="separator px-4 my-5" style="font-size: 35px; font-family:'Bahnschrift', sans-serif;">Habilidades</div>
+
+<div style="width: 100%; display: flex; justify-content: center;" data-aos="fade-down" data-aos-delay="100"
+  data-aos-duration="1000">
+  <div id="carouselAbilities" class="carousel slide carousel-fade carousel-style">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselAbilities" data-bs-slide-to="0" class=""
+        aria-label="Diapositiva 1"></button>
+      <button type="button" data-bs-target="#carouselAbilities" data-bs-slide-to="1" aria-label="Diapositiva 2"
+        class=""></button>
+      <button type="button" data-bs-target="#carouselAbilities" data-bs-slide-to="2" aria-label="Diapositiva 3"
+        class="active" aria-current="true"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active" >
+        <div class="habilidades-style">
+
+          <h4 class="text-center  text-light py-4 font-style">Lenguajes</h4>
+          <hr class="mx-5" style="background-color: white; height: 3px;">
+          <div *ngFor="let rowSkill of skills">
+            <div class="row align-items-start pb-5">
+              <div class="col center-skills" *ngFor="let Skill of rowSkill.row1">
+                <div  class="skill-text-size-skills">
+                  <div class="text-warning">
+                    <i class="bi bi-check-circle"></i> {{Skill.name}}
+                  </div>
+                  <span class="text-light">{{Skill.level}}</span>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-start pb-5">
+              <div class="col center-skills" *ngFor="let Skill of rowSkill.row2">
+                <div  class="skill-text-size-skills">
+                  <div class="text-warning">
+                    <i class="bi bi-check-circle"></i> {{Skill.name}}
+                  </div>
+                  <span class="text-light">{{Skill.level}}</span>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-start pb-5">
+              <div class="col center-skills" *ngFor="let Skill of rowSkill.row3">
+                <div  class="skill-text-size-skills">
+                  <div class="text-warning" *ngIf="Skill.name !='' ">
+                    <i class="bi bi-check-circle"></i> {{Skill.name}}
+                  </div>
+                  <span class="text-light">{{Skill.level}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="habilidades-style">
+          <h4 class="text-center  text-light py-4 font-style">Hablildades Blandas</h4>
+          <hr class="mx-5" style="background-color: white; height: 3px;">
+
+          <div *ngFor="let rowSkill of ablilitiesSoft">
+            <div class="row align-items-start pb-5">
+              <div class="col center-skills" *ngFor="let Skill of rowSkill.row1">
+                <div  class="skill-text-size">
+                  <div class="text-warning" *ngIf="Skill.name !='' ">
+                    <i class="bi bi-check-circle"></i> {{Skill.name}}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-start pb-5">
+              <div class="col center-skills" *ngFor="let Skill of rowSkill.row2">
+                <div  class="skill-text-size">
+                  <div class="text-warning" *ngIf="Skill.name !='' ">
+                    <i class="bi bi-check-circle"></i> {{Skill.name}}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-start pb-5">
+              <div class="col center-skills" *ngFor="let Skill of rowSkill.row3">
+                <div  class="skill-text-size">
+                  <div class="text-warning" *ngIf="Skill.name !='' ">
+                    <i class="bi bi-check-circle"></i> {{Skill.name}}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-start pb-5">
+              <div class="col center-skills" *ngFor="let Skill of rowSkill.row4">
+                <div  class="skill-text-size">
+                  <div class="text-warning" *ngIf="Skill.name !='' ">
+                    <i class="bi bi-check-circle"></i> {{Skill.name}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="habilidades-style">
+          <h4 class="text-center  text-light py-4 font-style">Herramientas</h4>
+          <hr class="mx-5" style="background-color: white; height: 3px;">
+
+          <div *ngFor="let rowSkill of skillsTolls">
+            <div class="row align-items-start pb-5">
+              <div class="col center-skills" *ngFor="let Skill of rowSkill.row1">
+                <div  class="skill-text-size-skills">
+                  <div class="text-warning" *ngIf="Skill.name !='' ">
+                    <i class="bi bi-check-circle"></i> {{Skill.name}}
+                  </div>
+                  <span class="text-light">{{Skill.level}}</span>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-start pb-5">
+              <div class="col center-skills" *ngFor="let Skill of rowSkill.row2">
+                <div  class="skill-text-size-skills">
+                  <div class="text-warning" *ngIf="Skill.name !='' ">
+                    <i class="bi bi-check-circle"></i> {{Skill.name}}
+                  </div>
+                  <span class="text-light">{{Skill.level}}</span>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-start pb-5">
+              <div class="col center-skills" *ngFor="let Skill of rowSkill.row3">
+                <div class="skill-text-size-skills">
+                  <div class="text-warning" *ngIf="Skill.name !='' ">
+                    <i class="bi bi-check-circle"></i> {{Skill.name}}
+                  </div>
+                  <span class="text-light">{{Skill.level}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselAbilities" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselAbilities" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>

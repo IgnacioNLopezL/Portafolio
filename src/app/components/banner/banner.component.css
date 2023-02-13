@@ -1,0 +1,35 @@
+.banner-text{
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: .8px;
+  line-height: 1.5em;
+  width: 96%;
+  text-align: left;
+
+  font-family:'cambria';
+
+}
+.anexos{
+  color:aliceblue;
+  background-color: rgb(23, 21, 21);
+  border: 0;
+  font-size: 25px;
+  align-self: center;
+  display: flex;
+  letter-spacing: .8px;
+  margin-top: 40px;
+  font-family:'Bahnschrift', sans-serif;
+
+}
+
+.image-size{
+  width: 530px;
+  height: 390px;
+}
+.name-banner{
+  font-family:'Bahnschrift', sans-serif;
+  color: rgb(170, 205, 16);
+  font-size: 50px;
+}
+
+
